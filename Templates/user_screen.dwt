@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PHPシステム</title>
+<!-- TemplateBeginEditable name="doctitle" -->
+<!-- TemplateEndEditable -->
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="wrap">
+	<div id="head">
+		<h1>
+<!-- TemplateBeginEditable name="h1" -->
+<!-- TemplateEndEditable -->
+		</h1>
+	</div>
+	<div id="content">
+		<div id="lead">
+<!-- TemplateBeginEditable name="lead" -->
+<!-- TemplateEndEditable -->
+		</div>
+<!-- TemplateBeginEditable name="body" -->
+<!-- TemplateEndEditable -->
+	</div>
+</div>
+</body>
+</html>
