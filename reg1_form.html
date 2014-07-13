@@ -22,16 +22,19 @@
 	<div id="content">
 		<div id="lead">
 <!-- InstanceBeginEditable name="lead" -->
-			メールアドレスを入力してください。
+			{$text}			
 <!-- InstanceEndEditable -->
 		</div>
 <!-- InstanceBeginEditable name="body" -->
-		<form action="reg1_end.html" method="post">
+		<form action="" method="post">
 		<dl>
 			<dt>メールアドレス：</dt>
-			<dd><input type="text" name="userEmail" value=""></dd>
+			<dd><input type="text" name="userMail" value="{$userMail}"></dd>
 		</dl>
-		<p class="taC"><input type="submit" value="この内容で登録"></p>
+		<p class="taC">
+			<input type="submit" value="この内容で登録">
+			<input type="hidden" name="m" value="reg1_end">
+		</p>
 		</form>
 <!-- InstanceEndEditable -->
 	</div>
