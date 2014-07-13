@@ -54,7 +54,7 @@ function reg2_conf() {
 
 	if(empty($_REQUEST["userPw"])) {
 		$err .= '<li>パスワードを入力してください</li>';
-	} else if(preg_match("/[\W\D]/",$_REQUEST["userPw"])) {
+	} else if(preg_match('/^[\w]+$/',$_REQUEST["userPw"])) {
 		$err .= '<li>パスワードは半角英数文字のみで入力してください</li>';
 	} else if(mb_strlen($_REQUEST["userPw"]) < 6 or mb_strlen($_REQUEST["userPw"]) > 16) {
 		$err .= '<li>パスワードは6文字〜16文字以内で入力してください</li>';
