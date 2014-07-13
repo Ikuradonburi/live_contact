@@ -22,19 +22,23 @@
 <!-- InstanceBeginEditable name="lead" --> 下記の内容で登録して宜しいですか？ <!-- InstanceEndEditable -->
 		</div>
 <!-- InstanceBeginEditable name="body" -->
-		<form action="reg2_end.html" method="post">
+		<form action="regist2.php" method="post">
 			<dl>
 				<dt>メールアドレス：</dt>
-				<dd>aaa@gmail.com</dd>
+				<dd>{$userMail}</dd>
 				<dt>お名前：</dt>
-				<dd>ZZZZZZ</dd>
+				<dd>{$userName}</dd>
 				<dt>パスワード：</dt>
-				<dd>123abc</dd>
+				<dd>{$userPw}</dd>
 			</dl>
 			<p class="taC">
-				<input type="submit" value="戻る">
+				<input type="submit" name="back" value="戻る">
 				<input type="submit" value="この内容で登録">
 			</p>
+			<input type="hidden" name="userId" value="{$userId}">
+			<input type="hidden" name="userName" value="{$userName}">
+			<input type="hidden" name="userPw" value="{$userPw}">
+			<input type="hidden" name="m" value="reg2_end">
 		</form>
 		<!-- InstanceEndEditable -->
 	</div>

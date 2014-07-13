@@ -22,20 +22,22 @@
 	<div id="content">
 		<div id="lead">
 <!-- InstanceBeginEditable name="lead" -->
-			下記の項目を入力してください。
+			{$text}
 <!-- InstanceEndEditable -->
 		</div>
 <!-- InstanceBeginEditable name="body" -->
-		<form action="reg2_conf.html" method="post">
+		<form action="regist2.php" method="post">
 			<dl>
 				<dt>メールアドレス：</dt>
-				<dd>aaa@gmail.com</dd>
+				<dd>{$userMail}</dd>
 				<dt>お名前：</dt>
-				<dd><input type="text" name="userName" value=""></dd>
+				<dd><input type="text" name="userName" value="{$userName}"></dd>
 				<dt>パスワード：</dt>
-				<dd><input type="text" name="userPw" value=""></dd>
+				<dd><input type="text" name="userPw" value="{$userPw}"></dd>
 			</dl>
 			<p class="taC"><input type="submit" value="確認画面へ"></p>
+			<input type="hidden" name="userId" value="{$userId}">
+			<input type="hidden" name="m" value="reg2_conf">
 		</form>
 <!-- InstanceEndEditable -->
 	</div>
