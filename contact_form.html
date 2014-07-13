@@ -22,37 +22,33 @@
 	<div id="content">
 		<div id="lead">
 <!-- InstanceBeginEditable name="lead" -->
-			下記の項目を入力してください。
+			{$text}
 <!-- InstanceEndEditable -->
 		</div>
 <!-- InstanceBeginEditable name="body" -->
-		<form action="contact_conf.html" method="post">
+		<form action="index.php" method="post">
 		<dl>
 			<dt>お名前：</dt>
-			<dd>ZZZZZZさん</dd>
+			<dd>{$userName}さん</dd>
 			<dt>パート</dt>
 			<dd>
-				<label><input type="radio" name="contactPart" value="ボーカル"> ボーカル</label>
-				<label><input type="radio" name="contactPart" value="ギター"> ギター</label>
-				<label><input type="radio" name="contactPart" value="ベース"> ベース</label>
-				<label><input type="radio" name="contactPart" value="キーボード"> キーボード</label>
-				<label><input type="radio" name="contactPart" value="ドラム"> ドラム</label>
+				{$contactPart}
 			</dd>
 			<dt>日付</dt>
 			<dd>
 				<select name="contactYear">
-					<option value=""></option>
-					<option value="2014">2014</option>
+					<option value="">-</option>
+					{$contactYear}
 				</select>
 				年
 				<select name="contactMonth">
 					<option value=""></option>
-					<option value="12">12</option>
+					{$contactMonth}
 				</select>
 				月
 				<select name="contactDate">
 					<option value=""></option>
-					<option value="31">31</option>
+					{$contactDate}
 				</select>
 				日
 			</dd>
@@ -60,27 +56,24 @@
 			<dd>
 				<select name="contactPlace">
 					<option value="">選択してください</option>
-					<option value="梅田Zeela">梅田Zeela</option>
-					<option value="心斎橋CLAPPER">心斎橋CLAPPER</option>
-					<option value="心斎橋SOMA">心斎橋SOMA</option>
+					{$contactPlace}
 				</select>
 			</dd>
 			<dt>時間帯</dt>
 			<dd>
-				<label><input type="radio" name="contactTime" value="午前"> 午前</label>
-				<label><input type="radio" name="contactTime" value="午後"> 午後</label>
-				<label><input type="radio" name="contactTime" value="夜"> 夜</label>
+				{$contactTime}
 			</dd>
 			<dt>譜面台レンタル</dt>
 			<dd>
 				<select name="contactOption">
 					<option value="0">なし</option>
-					<option value="1">1個</option>
+					{$contactOption}
 				</select>
 				<br>(1つ300円)
 			</dd>
 		</dl>
 		<p class="taC"><input type="submit" value="この内容で申込"></p>
+		<input type="hidden" name="m" value="contact_conf">
 		</form>
 <!-- InstanceEndEditable -->
 	</div>
